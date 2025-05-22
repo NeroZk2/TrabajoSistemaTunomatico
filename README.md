@@ -24,4 +24,7 @@ Este proyecto fue desarrollado como parte de un trabajo académico para aplicar 
 ---
 ## 1. Diagrama de caso de uso UML
 ![img](DiagramaCasoDeUso.png)
-
+## 2. Diagrama de clases
+![img](DiagramaDeClases.png)
+## 3. Diagrama de implementacion
+![img](DiagramaDeImplementacion.png)
