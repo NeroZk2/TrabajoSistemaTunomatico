@@ -70,5 +70,16 @@ Estas relaciones permiten mantener flujos funcionales limpios y modulares, respe
 
 ## 2. Diagrama de clases
 ![img](DiagramaDeClases.png)
+
+###1. Singleton
+#### Clase aplicada:
+- TurnManager (o GestorDeTurnos)
+
+#### Intención arquitectónica:
+Asegura que exista una única instancia global encargada de administrar todos los turnos del sistema. Controla la asignación, el seguimiento y la actualización del estado de cada turno.
+
+#### Justificación:
+Permite centralizar la lógica de negocio relacionada con la gestión de turnos, evitando conflictos o inconsistencias por múltiples instancias.
+
 ## 3. Diagrama de implementacion
 ![img](DiagramaImplementacion.png)
