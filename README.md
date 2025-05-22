@@ -47,6 +47,10 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 
 - `<<include>>` Asignar número de turno: acción obligatoria que genera el identificador único del turno.
 
+### Cancelar turno
+
+- `<<extend>>` Consultar turno: el cliente puede consultar su turno actual antes de cancelarlo, como paso opcional.
+
 ### Llamar siguiente turno
 
 - `<<include>>` Actualizar estado del turno: es parte inherente del proceso de llamado, ya que el turno cambia de “esperando” a “en atención”.
@@ -54,6 +58,14 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 ### Generar Reportes
 
 - `<<include>>` Filtrar por fecha o tipo de atención: el administrador puede aplicar filtros opcionales para acotar el reporte.
+
+  ## Justificación de las relaciones aplicadas:
+  
+Se utilizó `<<include>>` en procesos que dependen obligatoriamente de otros subprocesos, asegurando una ejecución coherente y secuencial. Por ejemplo, solicitar turno siempre conlleva seleccionar un tipo, validar disponibilidad y recibir la asignacion de un número.
+
+Se empleó `<<extend>>` para acciones opcionales o condicionales,por ejemplo al cancelar un turno, se puede volver a consultar por un turno. Ya que dependen del contexto o de decisiones del usuario.
+
+Estas relaciones permiten mantener flujos funcionales limpios y modulares, respetando principios de reutilización y claridad.
 
 
 ## 2. Diagrama de clases
