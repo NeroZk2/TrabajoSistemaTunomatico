@@ -51,11 +51,9 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 
 - `<<include>>` Mostrar turno en pantalla: es parte inherente del proceso de llamado.
 
-- `<<extend>>` Cambiar prioridad de atención: en algunos casos, el empleado puede ajustar la prioridad.
-
 ### Generar Reportes
 
-- `<<extend>>` Filtrar por fecha o tipo de atención: el administrador puede aplicar filtros opcionales para acotar el reporte.
+- `<<include>>` Filtrar por fecha o tipo de atención: el administrador puede aplicar filtros opcionales para acotar el reporte.
 
 
 ## 2. Diagrama de clases
