@@ -83,6 +83,8 @@ Asegura que exista una única instancia global encargada de administrar todos lo
 ### Justificación:
 Permite centralizar la lógica de negocio relacionada con la gestión de turnos, evitando conflictos o inconsistencias por múltiples instancias.
 
+---
+
 ## 2. Prototype
 ### Clase aplicada:
 
@@ -95,6 +97,8 @@ Permite crear nuevos turnos clonando prototipos existentes, lo que optimiza la g
 
 ### Justificación:
 El sistema necesita generar muchos turnos similares (con diferencias menores como prioridad o tipo). Usar Prototype permite crear nuevas instancias de forma eficiente sin recrear lógicas repetitivas.
+
+---
 
 ## 3. Bridge
 
@@ -119,6 +123,8 @@ Si bien la única implementación activa es para una app móvil, el uso de Bridg
 
 El sistema Tunomático se despliega en una arquitectura de tres capas distribuidas en distintos nodos físicos o virtuales, permitiendo escalabilidad, mantenimiento independiente y separación de responsabilidades. Los componentes se alojan en los siguientes nodos:
 
+---
+
 ### Cliente Móvil
 
 - Dispositivo Android/iOS con la aplicación instalada.
@@ -126,6 +132,8 @@ El sistema Tunomático se despliega en una arquitectura de tres capas distribuid
 - Comunicación vía red con el backend (REST API).
 
 - Presenta los turnos mediante el patrón Bridge (PantallaTurnos → PantallaMovil).
+
+---
 
 ### Servidor de Aplicaciones (Backend)
 
@@ -140,6 +148,8 @@ Contiene componentes como:
 - Lógica de asignación, cancelación y consulta de turnos.
 
 Expone una API RESTful que es consumida por el cliente móvil.
+
+---
 
 ### Base de Datos
 
