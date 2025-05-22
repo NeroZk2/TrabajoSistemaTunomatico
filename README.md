@@ -67,6 +67,7 @@ Se empleó `<<extend>>` para acciones opcionales o condicionales,por ejemplo al 
 
 Estas relaciones permiten mantener flujos funcionales limpios y modulares, respetando principios de reutilización y claridad.
 
+---
 
 ## 2. Diagrama de clases
 ![img](DiagramaDeClases.png)
@@ -109,5 +110,45 @@ Desacoplar la lógica de presentación de turnos de la plataforma específica do
 ### Justificación:
 Si bien la única implementación activa es para una app móvil, el uso de Bridge garantiza que el sistema pueda escalar a otros entornos de presentación de forma modular, sin alterar las clases principales de control o lógica de turnos.
 
+---
+
 ## 3. Diagrama de implementacion
 ![img](DiagramaImplementacion.png)
+
+### Despliegue físico
+
+El sistema Tunomático se despliega en una arquitectura de tres capas distribuidas en distintos nodos físicos o virtuales, permitiendo escalabilidad, mantenimiento independiente y separación de responsabilidades. Los componentes se alojan en los siguientes nodos:
+
+### Cliente Móvil
+
+- Dispositivo Android/iOS con la aplicación instalada.
+
+- Comunicación vía red con el backend (REST API).
+
+- Presenta los turnos mediante el patrón Bridge (PantallaTurnos → PantallaMovil).
+
+### Servidor de Aplicaciones (Backend)
+
+Implementa la lógica de negocio del sistema.
+
+Contiene componentes como:
+
+- TurnManager (Singleton): gestiona todos los turnos del sistema.
+
+- Clases de Turno, clonadas usando el patrón Prototype.
+
+- Lógica de asignación, cancelación y consulta de turnos.
+
+Expone una API RESTful que es consumida por el cliente móvil.
+
+### Base de Datos
+
+Nodo físico o instancia en la nube donde se almacenan:
+
+- Datos de usuarios.
+
+- Historial y estado de turnos.
+
+- Configuraciones del sistema.
+
+Comunicación segura con el backend mediante JDBC o equivalente.
