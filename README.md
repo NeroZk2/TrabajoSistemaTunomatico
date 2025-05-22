@@ -1,8 +1,8 @@
-# TrabajoSistemaTunomatico
+# TrabajoSistemaTurnomatico
 #### Por Dilan Abarca
 
 ## Descripcion general del sistema
-Este proyecto consiste en el desarrollo de un sistema tunomático, el cual permite organizar y administrar turnos de forma automatizada. El objetivo principal es facilitar la atención ordenada de personas en distintos contextos, como oficinas, centros médicos, instituciones educativas o cualquier lugar donde se requiera un sistema de turnos.
+Este proyecto consiste en el desarrollo de un sistema turnomático, el cual permite organizar y administrar turnos de forma automatizada. El objetivo principal es facilitar la atención ordenada de personas en distintos contextos, como oficinas, centros médicos, instituciones educativas o cualquier lugar donde se requiera un sistema de turnos.
 
 El sistema sistema cuenta con funciones como:
 
@@ -28,7 +28,7 @@ Este proyecto fue desarrollado como parte de un trabajo académico para aplicar 
 ![img](DiagramaCasoDeUso.png)
 ## Descripcion General:
 
-El análisis funcional del sistema Tunomático permitió identificar claramente a los actores clave que interactúan con la plataforma y las funcionalidades esenciales del flujo de gestión de turnos. Asimismo, se aplicaron adecuadamente las relaciones <<include>> y <<extend>> en el diagrama de casos de uso para reflejar la modularidad del sistema, diferenciando entre flujos obligatorios y comportamientos opcionales.
+El análisis funcional del sistema Turnomático permitió identificar claramente a los actores clave que interactúan con la plataforma y las funcionalidades esenciales del flujo de gestión de turnos. Asimismo, se aplicaron adecuadamente las relaciones <<include>> y <<extend>> en el diagrama de casos de uso para reflejar la modularidad del sistema, diferenciando entre flujos obligatorios y comportamientos opcionales.
 
 ### Actores identificados:
 
@@ -38,10 +38,10 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 
 - **Administrador:** Usuario con privilegios elevados que genera reportes, configura el sistema y accede a estadísticas del uso general.
 
-- **Sistema Interno Tunomático:** Ejecuta lógicas internas como la asignación de números de turno y la validación de disponibilidad.
+- **Sistema Interno Turnomático:** Ejecuta lógicas internas como la asignación de números de turno y la validación de disponibilidad.
   
  ## Casos de uso destacados y relaciones aplicadas:
-### Solicitar Turno
+### Solicitar turno
 
 - `<<include>>` Seleccionar tipo de turno: es obligatorio que el cliente indique el tipo de atención.
 
@@ -123,7 +123,7 @@ Si bien la única implementación activa es para una app móvil, el uso de Bridg
 
 ### Despliegue físico
 
-El sistema Tunomático se despliega en una arquitectura de tres capas distribuidas en distintos nodos físicos o virtuales, permitiendo escalabilidad, mantenimiento independiente y separación de responsabilidades. Los componentes se alojan en los siguientes nodos:
+El sistema Turnomático se despliega en una arquitectura de tres capas distribuidas en distintos nodos físicos o virtuales, permitiendo escalabilidad, mantenimiento independiente y separación de responsabilidades. Los componentes se alojan en los siguientes nodos:
 
 ---
 
@@ -143,7 +143,7 @@ Implementa la lógica de negocio del sistema.
 
 Contiene componentes como:
 
-- TurnManager (Singleton): gestiona todos los turnos del sistema.
+- GestorDeTurnos (Singleton): gestiona todos los turnos del sistema.
 
 - Clases de Turno, clonadas usando el patrón Prototype.
 
@@ -171,7 +171,7 @@ API RESTful: Se eligió este tipo de API por su simplicidad, compatibilidad con 
 
 Patrones usados en backend:
 
-- Singleton: TurnManager centraliza la lógica de turnos, asegurando consistencia global.
+- Singleton: GestorDeTurnos centraliza la lógica de turnos, asegurando consistencia global.
 
 - Prototype: facilita la creación de turnos personalizados clonando plantillas.
 
@@ -181,6 +181,6 @@ Patrones usados en backend:
 
 ## Reflexion final sobre modelado
 
-El proceso de modelado arquitectónico del sistema Tunomático permitió plasmar de forma estructurada tanto los aspectos funcionales como técnicos de un sistema realista y escalable. A través de este ejercicio, se demostró la importancia de transitar desde una visión de alto nivel (casos de uso) hacia una arquitectura concreta y bien fundamentada (clases e implementación física), aplicando patrones de diseño reconocidos como herramientas clave de calidad y sostenibilidad del software.
+El proceso de modelado arquitectónico del sistema Turnomático permitió plasmar de forma estructurada tanto los aspectos funcionales como técnicos de un sistema realista y escalable. A través de este ejercicio, se demostró la importancia de transitar desde una visión de alto nivel (casos de uso) hacia una arquitectura concreta y bien fundamentada (clases e implementación física), aplicando patrones de diseño reconocidos como herramientas clave de calidad y sostenibilidad del software.
 
 El uso de patrones como Singleton, Prototype y Bridge no solo permitió organizar el sistema de forma más coherente, sino que también fomentó la reutilización, modularidad y bajo acoplamiento, principios esenciales para el mantenimiento y evolución del sistema a futuro. Además, se logró un equilibrio entre flexibilidad y control, por ejemplo al permitir clonar fácilmente tipos de turnos o integrar nuevas formas de visualización sin alterar el núcleo del sistema.
