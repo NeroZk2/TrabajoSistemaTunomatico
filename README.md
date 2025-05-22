@@ -13,6 +13,7 @@ El sistema sistema cuenta con funciones como:
 - Solicitar un turno desde un "Quiosco" o una "App Movil"
 
 Este proyecto fue desarrollado como parte de un trabajo académico para aplicar conocimientos adquiridos en la asignatura de **Patrones de Diseño**.
+
 ---
 ## Objetivos del modelado:
 
