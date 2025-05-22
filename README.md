@@ -23,4 +23,5 @@ Este proyecto fue desarrollado como parte de un trabajo académico para aplicar 
 
 ---
 ## 1. Diagrama de caso de uso UML
+![img]()Diagrama de caso de uso.drawio.png)
 
