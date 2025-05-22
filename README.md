@@ -73,13 +73,41 @@ Estas relaciones permiten mantener flujos funcionales limpios y modulares, respe
 
 ## 1. Singleton
 ### Clase aplicada:
-- TurnManager (o GestorDeTurnos)
+
+- `GestorDeTurnos`
 
 ### Intención arquitectónica:
 Asegura que exista una única instancia global encargada de administrar todos los turnos del sistema. Controla la asignación, el seguimiento y la actualización del estado de cada turno.
 
 ### Justificación:
 Permite centralizar la lógica de negocio relacionada con la gestión de turnos, evitando conflictos o inconsistencias por múltiples instancias.
+
+## 2. Prototype
+### Clase aplicada:
+
+- `Turno`(Turno base que puede ser clonado)
+
+- Subtipos como `TurnoGeneral` y `TurnoPreferencial`.
+
+### Intención arquitectónica:
+Permite crear nuevos turnos clonando prototipos existentes, lo que optimiza la generación de objetos con configuraciones similares y reduce la dependencia de constructores complejos.
+
+### Justificación:
+El sistema necesita generar muchos turnos similares (con diferencias menores como prioridad o tipo). Usar Prototype permite crear nuevas instancias de forma eficiente sin recrear lógicas repetitivas.
+
+## 3. Bridge
+
+### Clases aplicadas:
+
+- `Abstracción: PantallaTurnos`
+
+- `Implementación concreta: PantallaMovil`
+
+### Intención arquitectónica:
+Desacoplar la lógica de presentación de turnos de la plataforma específica donde se visualizan. Aunque actualmente solo se implementa una versión para dispositivos móviles, la estructura permite agregar fácilmente nuevas formas de presentación (como pantallas LED o paneles web) sin modificar la lógica general del sistema.
+
+### Justificación:
+Si bien la única implementación activa es para una app móvil, el uso de Bridge garantiza que el sistema pueda escalar a otros entornos de presentación de forma modular, sin alterar las clases principales de control o lógica de turnos.
 
 ## 3. Diagrama de implementacion
 ![img](DiagramaImplementacion.png)
