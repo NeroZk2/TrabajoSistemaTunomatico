@@ -161,4 +161,16 @@ Nodo físico o instancia en la nube donde se almacenan:
 
 - Configuraciones del sistema.
 
-Comunicación segura con el backend mediante JDBC o equivalente.
+---
+
+## Decisiones técnicas
+
+API RESTful: Se eligió este tipo de API por su simplicidad, compatibilidad con múltiples plataformas (como apps móviles) y facilidad de integración futura.
+
+Patrones usados en backend:
+
+- Singleton: TurnManager centraliza la lógica de turnos, asegurando consistencia global.
+
+- Prototype: facilita la creación de turnos personalizados clonando plantillas.
+
+- Bridge: usado en el cliente móvil para desacoplar la vista de la lógica de presentación.
