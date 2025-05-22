@@ -24,6 +24,16 @@ Este proyecto fue desarrollado como parte de un trabajo académico para aplicar 
 ---
 ## 1. Diagrama de caso de uso UML
 ![img](DiagramaCasoDeUso.png)
+El análisis funcional del sistema Tunomático permitió identificar claramente a los actores clave que interactúan con la plataforma y las funcionalidades esenciales del flujo de gestión de turnos. Asimismo, se aplicaron adecuadamente las relaciones <<include>> y <<extend>> en el diagrama de casos de uso para reflejar la modularidad del sistema, diferenciando entre flujos obligatorios y comportamientos opcionales.
+
+###Actores identificados:
+**Cliente:** Usuario que accede al sistema desde quioscos, app o web para solicitar y consultar turnos. También puede cancelar turnos o revisar su historial.
+
+**Empleado:** Personal de atención que visualiza y gestiona la fila de turnos, llama a los clientes y marca turnos como atendidos.
+
+**Administrador:** Usuario con privilegios elevados que genera reportes, configura el sistema y accede a estadísticas del uso general.
+
+**Sistema Interno Tunomático:** Ejecuta lógicas internas como la asignación de números de turno y la validación de disponibilidad.
 ## 2. Diagrama de clases
 ![img](DiagramaDeClases.png)
 ## 3. Diagrama de implementacion
