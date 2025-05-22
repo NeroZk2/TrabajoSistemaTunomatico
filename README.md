@@ -71,7 +71,7 @@ Estas relaciones permiten mantener flujos funcionales limpios y modulares, respe
 ## 2. Diagrama de clases
 ![img](DiagramaDeClases.png)
 
-##1. Singleton
+## 1. Singleton
 ### Clase aplicada:
 - TurnManager (o GestorDeTurnos)
 
