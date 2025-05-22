@@ -49,7 +49,7 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 
 - <<extend>> Confirmar notificación: el cliente puede optar por recibir confirmación por correo/SMS.
 
-###Consultar Turno
+### Consultar Turno
 
 - <<extend>> Ver historial de turnos: el cliente puede ver sus turnos pasados, si lo desea.
 
