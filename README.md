@@ -174,3 +174,11 @@ Patrones usados en backend:
 - Prototype: facilita la creación de turnos personalizados clonando plantillas.
 
 - Bridge: usado en el cliente móvil para desacoplar la vista de la lógica de presentación.
+
+---
+
+## Reflexion final sobre modelado
+
+El proceso de modelado arquitectónico del sistema Tunomático permitió plasmar de forma estructurada tanto los aspectos funcionales como técnicos de un sistema realista y escalable. A través de este ejercicio, se demostró la importancia de transitar desde una visión de alto nivel (casos de uso) hacia una arquitectura concreta y bien fundamentada (clases e implementación física), aplicando patrones de diseño reconocidos como herramientas clave de calidad y sostenibilidad del software.
+
+El uso de patrones como Singleton, Prototype y Bridge no solo permitió organizar el sistema de forma más coherente, sino que también fomentó la reutilización, modularidad y bajo acoplamiento, principios esenciales para el mantenimiento y evolución del sistema a futuro. Además, se logró un equilibrio entre flexibilidad y control, por ejemplo al permitir clonar fácilmente tipos de turnos o integrar nuevas formas de visualización sin alterar el núcleo del sistema.
