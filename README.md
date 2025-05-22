@@ -41,27 +41,27 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
  ## Casos de uso destacados y relaciones aplicadas:
 ### Solicitar Turno
 
-- '<<include>>' Seleccionar tipo de turno: es obligatorio que el cliente indique el tipo de atención.
+- '<include>' Seleccionar tipo de turno: es obligatorio que el cliente indique el tipo de atención.
 
-- '<<include>>' Validar disponibilidad: siempre se verifica si hay capacidad antes de asignar el turno.
+- '<include>' Validar disponibilidad: siempre se verifica si hay capacidad antes de asignar el turno.
 
-- '<<include>>' Asignar número de turno: acción obligatoria que genera el identificador único del turno.
+- '<include>' Asignar número de turno: acción obligatoria que genera el identificador único del turno.
 
-- '<<extend>>' Confirmar notificación: el cliente puede optar por recibir confirmación por correo/SMS.
+- '<extend>' Confirmar notificación: el cliente puede optar por recibir confirmación por correo/SMS.
 
 ### Consultar Turno
 
-- '<<extend>>' Ver historial de turnos: el cliente puede ver sus turnos pasados, si lo desea.
+- '<extend>' Ver historial de turnos: el cliente puede ver sus turnos pasados, si lo desea.
 
 ### Llamar siguiente turno
 
-- '<<include>>' Mostrar turno en pantalla: es parte inherente del proceso de llamado.
+- '<include>' Mostrar turno en pantalla: es parte inherente del proceso de llamado.
 
-- '<<extend>>' Cambiar prioridad de atención: en algunos casos, el empleado puede ajustar la prioridad.
+- '<extend>' Cambiar prioridad de atención: en algunos casos, el empleado puede ajustar la prioridad.
 
 ### Generar Reportes
 
-- '<<extend>>' Filtrar por fecha o tipo de atención: el administrador puede aplicar filtros opcionales para acotar el reporte.
+- '<extend>' Filtrar por fecha o tipo de atención: el administrador puede aplicar filtros opcionales para acotar el reporte.
 
 
 ## 2. Diagrama de clases
