@@ -27,4 +27,4 @@ Este proyecto fue desarrollado como parte de un trabajo académico para aplicar 
 ## 2. Diagrama de clases
 ![img](DiagramaDeClases.png)
 ## 3. Diagrama de implementacion
-![img](DiagramaDeImplementacion.png)
+![img](DiagramaImplementacion.png)
