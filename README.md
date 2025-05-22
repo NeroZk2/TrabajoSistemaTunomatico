@@ -4,9 +4,11 @@ Este proyecto consiste en el desarrollo de un sistema tunomático, el cual permi
 
 El sistema sistema cuenta con funciones como:
 
-Generación automática de números de turno.
+-Generación automática de números de turno.
 
-Visualización del turno actual.
+-Visualización del turno actual.
 
-Llamado de turnos en pantalla o mediante sonido.
+-Llamado de turnos en pantalla.
+
+-Solicitar un turno desde un "Quiosco" o una "App Movil"
 
