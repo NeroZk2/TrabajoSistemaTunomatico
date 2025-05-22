@@ -59,7 +59,7 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 
 - `<<include>>` Filtrar por fecha o tipo de atención: el administrador puede aplicar filtros opcionales para acotar el reporte.
 
-  ## Justificación de las relaciones aplicadas:
+## Justificación de las relaciones aplicadas:
   
 Se utilizó `<<include>>` en procesos que dependen obligatoriamente de otros subprocesos, asegurando una ejecución coherente y secuencial. Por ejemplo, solicitar turno siempre conlleva seleccionar un tipo, validar disponibilidad y recibir la asignacion de un número.
 
