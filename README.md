@@ -41,7 +41,7 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
  ## Casos de uso destacados y relaciones aplicadas:
 ### Solicitar Turno
 
-- '<include>' Seleccionar tipo de turno: es obligatorio que el cliente indique el tipo de atención.
+- ´<<include>>´ Seleccionar tipo de turno: es obligatorio que el cliente indique el tipo de atención.
 
 - '<include>' Validar disponibilidad: siempre se verifica si hay capacidad antes de asignar el turno.
 
