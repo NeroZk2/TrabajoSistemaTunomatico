@@ -49,7 +49,7 @@ El análisis funcional del sistema Tunomático permitió identificar claramente 
 
 ### Llamar siguiente turno
 
-- `<<include>>` Mostrar turno en pantalla: es parte inherente del proceso de llamado.
+- `<<include>>` Actualizar estado del turno: es parte inherente del proceso de llamado, ya que el turno cambia de “esperando” a “en atención”.
 
 ### Generar Reportes
 
